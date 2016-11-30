@@ -5,24 +5,11 @@ import sys
 
 
 def configurator():
-	csspart = """<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<meta name="author" content="Paul Kramme">
-	<meta name="description" content="My new cool website">
-	<meta property="og:url" content="http://txti.es/dmnc0">
-	<meta property="og:title" content="TheGreatTitle">
-	<meta property="og:site_name" content="txti">
-	<meta property="og:description" content="My new cool website">
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="TheGreatTitle">
-	<meta name="twitter:description" content="My new cool website">
-	<meta name="twitter:creator" content="Paul Kramme">
-	<title>TheGreatTitle</title>
-	<style type="text/css">body {font-size: 1.1em; line-height: 1.5em; max-width: 45em; margin: auto; padding: 0 2%;} img {max-width: 100%; display: block; margin: .75em auto;}</style>
-"""
+	author = input("Author? ")
+	title = input("Title? ")
+	description = input("Description? ")
+	url = input("URL? ")
+	
 
 
 def writetofile(name, templatepath, contentpath):
