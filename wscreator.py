@@ -12,6 +12,8 @@ def configurator(source, filename = "final.html"):
 	with open(filename, "w") as f:
 		f.write("<!doctype html>\n")
 		f.write("<html>\n")
+		f.write("<head>\n")
+		f.write('\t<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">\n')
 		f.write('\t<meta charset="utf-8">\n')
 		f.write('\t<meta name="viewport" content="width=device-width">\n')
 		f.write('\t<meta name="author" content="' + author + '">\n')
@@ -25,7 +27,7 @@ def configurator(source, filename = "final.html"):
 		f.write('\t<meta name="twitter:description" content="' + description + '">\n')
 		f.write('\t<meta name="twitter:creator" content="' + author + '">\n')
 		f.write('\t<title>' + title + '</title>\n')
-		f.write('\t<style type="text/css">body{margin:40px auto;max-width:650px;line-height:1.6;font-size:18px;color:#444;padding:010px}h1,h2,h3{line-height:1.2}</style>\n')
+		f.write('\t<style type="text/css">body{margin:40px auto;max-width:650px;line-height:1.6;font-size:18px;color:#444;padding:010px;font-family: 'Roboto', sans-serif;}h1,h2,h3{line-height:1.2}</style>\n')
 		f.write('</head>')
 	with open(filename, "a") as final:
 		with open(source, "r") as temp:
